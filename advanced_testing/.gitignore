@@ -37,3 +37,4 @@ out/
 .vscode/
 
 ./advanced_testing/.idea
+/.idea/
