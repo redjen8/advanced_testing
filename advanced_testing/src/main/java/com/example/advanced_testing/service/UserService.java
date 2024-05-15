@@ -8,6 +8,7 @@ import com.example.advanced_testing.repository.UserRepository;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Slf4j
@@ -25,5 +26,9 @@ public class UserService {
                 .status(UserStatus.ACTIVE)
                 .build()
         );
+    }
+
+    public Flux<User> getAllUsers() {
+        return userRepository.findAll();
     }
 }
