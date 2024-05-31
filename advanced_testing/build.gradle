@@ -28,15 +28,18 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
-    // https://mvnrepository.com/artifact/io.github.autoparams/autoparams
-    implementation 'io.github.autoparams:autoparams:8.3.0'
-
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.projectreactor:reactor-test'
     testImplementation 'org.mockito:mockito-inline:3.9.0'
+
+    // https://mvnrepository.com/artifact/io.github.autoparams/autoparams
+    implementation 'io.github.autoparams:autoparams:8.3.0'
+
+    // https://mvnrepository.com/artifact/com.navercorp.fixturemonkey.snasphot/fixture-monkey
+    testImplementation 'com.navercorp.fixturemonkey.snasphot:fixture-monkey:1.0.14-spring'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
